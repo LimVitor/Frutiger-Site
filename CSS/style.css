@@ -9,3 +9,19 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*
+mark {
+background-size: 100vw 100vw;
+position: relative;
+text-align: -webkit-center;
+background: repeating-linear-gradient(-45deg, #bf2541 0%, #1d1d27 25%, #bf2541 50%);
+-webkit-animation: 'slide' 30s infinite linear forwards;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+@keyframes slide {
+0% { background-position-x: 0%; }
+100% { background-position-x: 200vw; }
+}*/
