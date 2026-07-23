@@ -104,7 +104,7 @@
 body {
   background-image: url(../Assets/img/fundoProvisorioB.jpg);
   background-size: 100vw;
-  /*overflow: hidden; */
+
 }
 
 .container {
@@ -308,4 +308,106 @@ mark {
 .phoneIcon {
   width: 70px;
   height: 70px;
+}
+
+.window {
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.tabs {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 70rem;
+  top: 3.375rem;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.tabs [role='tabpanel'] {
+  height: 300px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+[role='tab']:nth-of-type(2)[aria-selected='false'],
+[role='tab']:nth-of-type(3)[aria-selected='false'] {
+  border-left: none;
+}
+
+[role='tab']:first-of-type {
+  margin-left: -3px;
+}
+
+.gray {
+  background: var(--color-grey);
+  padding: 5px;
+  line-height: 1.25rem;
+}
+
+guest {
+  color: var(--color-blue);
+}
+
+.white {
+  background: var(--color-white);
+  padding: 5px;
+  line-height: 1.25rem;
+}
+
+name {
+  color: var(--color-red);
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 415px;
+  left: 71.5rem;
+  bottom: 30.5rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.buttons > div {
+  animation: marquee 50s linear infinite;
+  animation-play-state: paused;
+  animation-delay: -25s;
+  width: 100%;
+  min-width: fit-content;
+  text-wrap: nowrap;
+}
+
+.buttons > div.follower {
+  position: absolute;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.buttons > div.play {
+  animation-play-state: running;
+}
+
+.buttons:hover > div.play {
+  animation-play-state: paused;
+}
+
+.spotify {
+  left: 69.5rem;
+  bottom: 11.75rem;
+  position: relative;
+  opacity: 0.9;
 }
