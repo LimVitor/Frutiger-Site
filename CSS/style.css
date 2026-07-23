@@ -102,7 +102,7 @@
 }
 
 body {
-  background-image: url(../Assets/img/Background.png);
+  background-image: url(../Assets/img/fundoProvisorioB.jpg);
   background-size: 100vw;
   /*overflow: hidden; */
 }
@@ -112,8 +112,8 @@ body {
   box-sizing: border-box;
   background: linear-gradient(
     180deg,
-    rgba(68, 86, 132, 1) 0%,
-    rgba(237, 245, 252, 0.85) 50%
+    rgba(68, 86, 132, 0.8) 0%,
+    rgba(237, 245, 252, 0.6) 50%
   );
   border: 1px solid black;
   border-radius: 5px;
@@ -178,7 +178,7 @@ body {
 .containerDois {
   border: 1px solid black;
   margin: 60px auto auto auto;
-  background: rgba(237, 245, 252, 0.85);
+  background: rgba(237, 245, 252, 0.8);
   border-radius: 5px;
   padding: 5px;
   width: 280px;
@@ -243,4 +243,69 @@ mark {
 .containerDois img {
   display: block;
   justify-self: center;
+}
+
+.containerTres {
+  background: #fff;
+  background: linear-gradient(
+    180deg,
+    rgba(237, 245, 252, 0.8) 0%,
+    rgba(191, 37, 65, 0.6) 100%
+  );
+  width: 280px;
+  height: 175px;
+  position: relative;
+  margin: 10px auto auto auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+}
+
+.phone {
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background: var(--color-white);
+  border: 1px solid black;
+  width: 265px;
+  height: 160px;
+  padding: 5px;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.phone p {
+  background: linear-gradient(
+    to bottom,
+    var(--color-grey),
+    var(--color-white),
+    var(--color-grey)
+  );
+  border-radius: 2px;
+  box-shadow:
+    rgba(60, 64, 67, 1) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.75) 0px 1px 3px 1px;
+  font-size: 1.125rem;
+  color: var(--color-darkBlue);
+  height: 25px;
+  width: 30px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.phoneIcons {
+  justify-content: center;
+  align-content: center;
+  padding-left: 18px;
+}
+
+.phoneIcon {
+  width: 70px;
+  height: 70px;
 }
